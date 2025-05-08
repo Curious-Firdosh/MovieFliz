@@ -15,9 +15,7 @@ const TopNav = () => {
        try{
             const {data} = await apiConnector.get(`/search/multi?query=${SearchBar}`);
             setData(data.results)
-            console.log(data);
-          
-            
+           
             
        }
        catch(err) {
